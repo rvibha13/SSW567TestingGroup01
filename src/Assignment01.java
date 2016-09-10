@@ -8,7 +8,7 @@
 *  1. classify triangle based on type       *
 *                                           *
 *********************************************/
-import java.io.*;
+//import java.io.*;
 
 
 public class Assignment01 {
