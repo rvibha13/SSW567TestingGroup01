@@ -15,24 +15,28 @@ public class Assignment01Junit {
 	
    @Test
 	//Checks if triangle is Equilateral for Integer Inputs
-	public void checkEquilateralI()
+	public void checkEquilateralInt()
 	{
 		int a = 3;
 		int b = 3;
 		int c = 3;
 		String result = Assignment01.classifyTriangle(a, b, c);
 		assertEquals(result, "Equilateral Triangle");
+		System.out.println("Inputs: a = " + a + " b = " + b + " c = " + c);
+		System.out.println("Output: " + result);
 	}
 
    @Test
    //Checks if triangle is Equilateral for Double Inputs
- 	public void checkEquilateralD()
+ 	public void checkEquilateralDouble()
  	{
  		double a = 3.53;
  		double b = 3.53;
  		double c = 3.53;
  		String result = Assignment01.classifyTriangle(a, b, c);
  		assertEquals(result, "Equilateral Triangle");
+ 		System.out.println("Inputs: a = " + a + " b = " + b + " c = " + c);
+		System.out.println("Output: " + result);
  	}
    
    @Test
@@ -44,6 +48,8 @@ public class Assignment01Junit {
 		int c = 5;
 		String result = Assignment01.classifyTriangle(a, b, c);
 		assertEquals(result, "Scalene Right Triangle");
+		System.out.println("Inputs: a = " + a + " b = " + b + " c = " + c);
+		System.out.println("Output: " + result);
 	}
 
    @Test
@@ -55,6 +61,8 @@ public class Assignment01Junit {
  		double c = Math.sqrt(41);
  		String result = Assignment01.classifyTriangle(a, b, c);
  		assertEquals(result, "Scalene Right Triangle"); 
+ 		System.out.println("Inputs: a = " + a + " b = " + b + " c = " + c);
+		System.out.println("Output: " + result);
  	}
    
    @Test
@@ -66,6 +74,8 @@ public class Assignment01Junit {
  		double c = 5.67;
  		String result = Assignment01.classifyTriangle(a, b, c);
  		assertEquals(result, "Isosceles Triangle"); 
+ 		System.out.println("Inputs: a = " + a + " b = " + b + " c = " + c);
+		System.out.println("Output: " + result);
  	}
    
    @Test
@@ -77,6 +87,8 @@ public class Assignment01Junit {
  		int c = 6;
  		String result = Assignment01.classifyTriangle(a, b, c);
  		assertEquals(result, "Isosceles Triangle"); 
+ 		System.out.println("Inputs: a = " + a + " b = " + b + " c = " + c);
+		System.out.println("Output: " + result);
  	}
    
    @Test
@@ -88,6 +100,8 @@ public class Assignment01Junit {
  		double c = 5.67;
  		String result = Assignment01.classifyTriangle(a, b, c);
  		assertEquals(result, "Scalene Triangle"); 
+ 		System.out.println("Inputs: a = " + a + " b = " + b + " c = " + c);
+		System.out.println("Output: " + result);
  	}
    
    @Test
@@ -99,6 +113,8 @@ public class Assignment01Junit {
  		int c = 6;
  		String result = Assignment01.classifyTriangle(a, b, c);
  		assertEquals(result, "Scalene Triangle"); 
+ 		System.out.println("Inputs: a = " + a + " b = " + b + " c = " + c);
+		System.out.println("Output: " + result);
  	}
    
    @Test
@@ -110,6 +126,8 @@ public class Assignment01Junit {
  		int c = 0;
  		String result = Assignment01.classifyTriangle(a, b, c);
  		assertEquals(result, "Invalid Triangle"); 
+ 		System.out.println("Inputs: a = " + a + " b = " + b + " c = " + c);
+		System.out.println("Output: " + result);
  	}
    
    @Test
@@ -121,6 +139,8 @@ public class Assignment01Junit {
  		double c = -3.4;
  		String result = Assignment01.classifyTriangle(a, b, c);
  		assertEquals(result, "Invalid Triangle"); 
+ 		System.out.println("Inputs: a = " + a + " b = " + b + " c = " + c);
+		System.out.println("Output: " + result);
  	}
 
 }
